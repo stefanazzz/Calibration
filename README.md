@@ -23,6 +23,7 @@
 |                  |        | &#9; for stacked iiput file reference (accel) and sensor, respectively
 |                  |        | python spectral_calibrate_ch3.py --pairs-glob "survey*_ch01.atf" "survey*_ch04.atf"
 |                  |        | &#9; for unstacked global list of pairs 
+|                  |        | python spectral_calibrate.py @input_spectral_calibrate.txt
 | `filt_atf.py`    | aim:   | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
 |                  | usage: | python filter_trace.py input.atf output.atf --freq_min 1000 --freq_max 200000
 |                  |        | python filter_trace.py input.atf output.atf --freq_min 0 --freq_max 50000     # low-pass
@@ -36,6 +37,7 @@
 | --- | --- |
 | plot_two_input_july.txt | plot_two.py
 | filt_input.txt          | filt_atf.py
+| input_spectral_calibrate.txt | spectral_calibrate.py
 
 ## Accessory scripts
 
