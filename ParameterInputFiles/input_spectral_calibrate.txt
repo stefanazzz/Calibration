@@ -1,0 +1,18 @@
+  --stacked stacked_ch02.atf stacked_ch03.atf 
+  --baseline-start-sec 6e-6 
+  --baseline-end-sec 40e-6 
+  --baseline-stat mean 
+  --shift-file1-sec -2e-6 
+  --amp-file1 31.6 
+  --amp-file2 2.0 
+  --tmin 40e-6 
+  --tmax 500e-6 
+  --tukey-alpha 0.10 
+  --smooth-hz 5000 
+  --waterlevel 1e-5 
+  --coherence-min 0.70 
+  --min-good-bins 5 
+  --bands "20000-40000,40000-80000,80000-150000" 
+  --freq-min 10000 
+  --freq-max 800000 
+  --out-prefix stacked_spectral_cal
