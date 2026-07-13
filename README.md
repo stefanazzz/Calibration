@@ -32,10 +32,10 @@
 
 ## Input file examples
 
-|     |
-| --- |
-| plot_two_input_july.txt |
-| filt_input.txt |
+|  input filename  | code |
+| --- | --- |
+| plot_two_input_july.txt | plot_two.py
+| filt_input.txt          | filt_atf.py
 
 ## Accessory scripts
 
