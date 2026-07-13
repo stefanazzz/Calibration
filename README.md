@@ -2,7 +2,7 @@
 
 ## Main scripts in folder *Code*
 
-| File | Description |
+| File |  | Description |
 | --- | --- | --- |
 | `flatten_bsf.py` | |Copies or moves nested BSF files into one folder with timestamped filenames. |
 | | usage:          | python flatten_bsf.py /data/2026 /data/flat --prefix survey
