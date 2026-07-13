@@ -20,10 +20,15 @@
 |                  | usage: | python plot_two.py @plot_two_input.txt
 | `spectral_calibrate.py` | | Estimates frequency-dependent calibration between paired ATF channels and writes CSV/PNG outputs. |
 |                  | usage: | python spectral_calibrate_ch3.py --stacked stacked_ch02.atf stacked_ch03.atf
-|                  |        | -> for stacked iiput file reference (accel) and sensor, respectively
+|                  |        | &#9; for stacked iiput file reference (accel) and sensor, respectively
 |                  |        | python spectral_calibrate_ch3.py --pairs-glob "survey*_ch01.atf" "survey*_ch04.atf"
-|                  |        | -> for unstacked global list of pairs 
+|                  |        | &#9; for unstacked global list of pairs 
 | `filt_atf.py`    |        | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
+|                  | usage: | python filter_trace.py input.atf output.atf --freq_min 1000 --freq_max 200000
+|                  |        | python filter_trace.py input.atf output.atf --freq_min 0 --freq_max 50000     # low-pass
+|                  |        | python filter_trace.py input.atf output.atf --freq_min 2000 --freq_max 0      # high-pass
+|                  |        | python filter_trace.py @filt_input.txt
+|                  |        | python filter_trace.py --input-files file1.atf file2.atf --freq_min 20000 --freq_max 40000
 
 ## Input file examples
 plot_two_input_july.txt
