@@ -1,0 +1,43 @@
+# ==========================================
+# REQUIRED INPUT / OUTPUT FILES
+# ==========================================
+--input-files
+./stacked_ch02.atf             # first input ATF file
+./stacked_ch03.atf             # second input ATF file
+# Output names are automatic, e.g. stacked_ch02_20_40k.atf.
+
+# ==========================================
+# FILTER BAND
+# freq_min = 0 means no high-pass
+# freq_max = 0 means no low-pass
+# Example below: 20-40 kHz band-pass
+# ==========================================
+--freq_min 0
+--freq_max 60000
+
+# ==========================================
+# FILTER TAPER
+# 0 lets the script choose automatically, about 5% of cutoff.
+# Use a positive value in Hz to set the cosine transition width.
+# ==========================================
+--transition_hz 10000
+
+# ==========================================
+# TIME TAPER BEFORE FFT
+# 0 means no time taper.
+# 0.05 tapers 5% of the signal at each end using a quarter-cosine ramp.
+# ==========================================
+--time_taper_fraction 0.05
+
+# ==========================================
+# ZERO PADDING BEFORE FFT
+# 1.0 pads one full signal length at the start and one full signal length
+# at the end before filtering, then crops back before saving.
+# ==========================================
+--zero_pad_fraction 1.0
+
+# ==========================================
+# MEAN REMOVAL
+# Uncomment to remove the trace mean before filtering, then add it back.
+# ==========================================
+--demean

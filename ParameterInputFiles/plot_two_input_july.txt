@@ -1,0 +1,52 @@
+# ==========================================
+# REQUIRED INPUT FILES (2 files)
+# ==========================================
+./stacked_ch02_0_60k.atf          # first file:accel receiver
+./stacked_ch03_0_60k.atf          # second file:piezo reciever
+
+# ==========================================
+# TITLES / LABELS (used in plot + legend)
+# ==========================================
+--title1 Acc              # label for first file
+--title2 PZ               # label for second file
+
+# ==========================================
+# TIME WINDOW (USED FOR EVERYTHING)
+# crop + processing + normalisation + plot
+# ==========================================
+--tmin 0.00000
+--tmax 0.00020
+
+# ==========================================
+# FILE1 TIME SHIFT
+# Applied to first file before baseline correction,
+# cropping, processing, normalisation and plotting.
+# Positive shift moves file1 later on the absolute time axis.
+# ==========================================
+--shift-file1-sec=-6e-6       # default: 0.0 s; e.g. +16e-6 or -16e-6
+
+# ==========================================
+# BASELINE CORRECTION WINDOW
+# (applied BEFORE normalisation, after optional file1 shift)
+# ==========================================
+--baseline-start-sec 0.000006   # default: 5e-6 s
+--baseline-end-sec   0.000040   # default: 2.5e-5 s
+
+# ==========================================
+# AMPLITUDE SCALING (FILE-BASED)
+# ==========================================
+#--amp-file1 31.6          # first file positive amplitude divisor 
+--amp-file1 1.0            # first file positive amplitude divisor
+--amp-file2 2.0           # second file positive amplitude divisor
+
+# ==========================================
+# INVERT file1, file2 or both: 
+# ==========================================
+--invert-file1
+#--invert-file2
+
+# ==========================================
+# NORMALISATION strategy: global or polarity 
+# peak neg or pos for both (polarity) OR peak absolute for both (global)
+# ==========================================
+--norm-mode polarity # options are polarity or global
