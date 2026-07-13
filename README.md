@@ -32,6 +32,7 @@
 
 ## Input file examples
 plot_two_input_july.txt
+filt_input.txt
 
 ## Accessory scripts
 
