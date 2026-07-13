@@ -4,26 +4,26 @@
 
 | File |  | Description |
 | --- | --- | --- |
-| `flatten_bsf.py` |        |Copies or moves nested BSF files into one folder with timestamped filenames. |
+| `flatten_bsf.py` |  aim:  |Copies or moves nested BSF files into one folder with timestamped filenames. |
 |                  | usage: | python flatten_bsf.py /data/2026 /data/flat --prefix survey
 |                  |        | python flatten_bsf.py /data/2026/02/17/14/42 /data/flat --prefix survey
-| `richter_bsf_to_atf.py` | | Converts Richter/ASC BSF waveform files into InSite-compatible ATF files. |
+| `richter_bsf_to_atf.py` | aim: | Converts Richter/ASC BSF waveform files into InSite-compatible ATF files. |
 |                  | usage: | python richter_bsf_to_atf.py 04_4650.bsf
 |                  |        | python richter_bsf_to_atf.py 04_4650.bsf --channels 1,2 --csv
 |                  |        | python richter_bsf_to_atf.py 04_4650.bsf --outdir out --prefix myevent
 |                  |        | python richter_bsf_to_atf.py 04_4650.bsf --header-from-bsf
 |                  |        | python richter_bsf_to_atf.py 04_4650.bsf --no-header-from-bsf --fs 1e7 --scale 5.9604644775e-7
-| `stack_atf.py`   |        | Averages ATF traces listed in a text file and writes `stack.atf`. |
+| `stack_atf.py`   |  aim:  | Averages ATF traces listed in a text file and writes `stack.atf`. |
 |                  | usage: | python stack_atf.py filenames.txt
 |                  |        | python stack_atf.py PATH/filenames.txt
-| `plot_two.py`    |        | Compares two ATF traces with baseline correction, optional shift/inversion, scaling, and normalization. |
+| `plot_two.py`    | aim:   | Compares two ATF traces with baseline correction, optional shift/inversion, scaling, and normalization. |
 |                  | usage: | python plot_two.py @plot_two_input.txt
-| `spectral_calibrate.py` | | Estimates frequency-dependent calibration between paired ATF channels and writes CSV/PNG outputs. |
+| `spectral_calibrate.py` | aim: | Estimates frequency-dependent calibration between paired ATF channels and writes CSV/PNG outputs. |
 |                  | usage: | python spectral_calibrate_ch3.py --stacked stacked_ch02.atf stacked_ch03.atf
 |                  |        | &#9; for stacked iiput file reference (accel) and sensor, respectively
 |                  |        | python spectral_calibrate_ch3.py --pairs-glob "survey*_ch01.atf" "survey*_ch04.atf"
 |                  |        | &#9; for unstacked global list of pairs 
-| `filt_atf.py`    |        | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
+| `filt_atf.py`    | aim:   | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
 |                  | usage: | python filter_trace.py input.atf output.atf --freq_min 1000 --freq_max 200000
 |                  |        | python filter_trace.py input.atf output.atf --freq_min 0 --freq_max 50000     # low-pass
 |                  |        | python filter_trace.py input.atf output.atf --freq_min 2000 --freq_max 0      # high-pass
