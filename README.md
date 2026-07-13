@@ -11,10 +11,15 @@
 | `spectral_calibrate.py` | Estimates frequency-dependent calibration between paired ATF channels and writes CSV/PNG outputs. |
 | `filt_atf.py` | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
 
-## Example input files
+## Example input files and usage
 
 | File | Description |
 | --- | --- |
+plot_tow.py:
+  usage: 
+  python plot_two.py @plot_two_input.txt
+  example input file
+  plot_two_input_july.txt
 
 
 ## Accessory scripts
