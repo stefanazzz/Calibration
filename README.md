@@ -3,16 +3,16 @@
 ## Main scripts in folder *Code*
 
 | File | Description |
-| --- | --- |
-| `flatten_bsf.py` | Copies or moves nested BSF files into one folder with timestamped filenames. |
-|  usage:          | python flatten_bsf.py /data/2026 /data/flat --prefix survey
+| --- | --- | --- |
+| `flatten_bsf.py` | |Copies or moves nested BSF files into one folder with timestamped filenames. |
+| | usage:          | python flatten_bsf.py /data/2026 /data/flat --prefix survey
 |                  | python flatten_bsf.py /data/2026/02/17/14/42 /data/flat --prefix survey
-| `richter_bsf_to_atf.py` | Converts Richter/ASC BSF waveform files into InSite-compatible ATF files. |
-| `stack_atf.py` | Averages ATF traces listed in a text file and writes `stack.atf`. |
-| `plot_two.py` | Compares two ATF traces with baseline correction, optional shift/inversion, scaling, and normalization. |
-|   usage:      | python plot_two.py @plot_two_input.txt
-| `spectral_calibrate.py` | Estimates frequency-dependent calibration between paired ATF channels and writes CSV/PNG outputs. |
-| `filt_atf.py` | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
+| `richter_bsf_to_atf.py` | | Converts Richter/ASC BSF waveform files into InSite-compatible ATF files. |
+| `stack_atf.py` | | Averages ATF traces listed in a text file and writes `stack.atf`. |
+| `plot_two.py` | | Compares two ATF traces with baseline correction, optional shift/inversion, scaling, and normalization. |
+| |  usage:      | python plot_two.py @plot_two_input.txt
+| `spectral_calibrate.py` | | Estimates frequency-dependent calibration between paired ATF channels and writes CSV/PNG outputs. |
+| `filt_atf.py` | | Applies FFT-based high-pass, low-pass, or band-pass filtering to one or more ATF-like traces. |
 
 ## Input file examples
 plot_two_input_july.txt
