@@ -31,6 +31,8 @@
 |                  |        | python filter_trace.py --input-files file1.atf file2.atf --freq_min 20000 --freq_max 40000
 
 ## Input file examples
+
+|     |
 | --- |
 | plot_two_input_july.txt |
 | filt_input.txt |
